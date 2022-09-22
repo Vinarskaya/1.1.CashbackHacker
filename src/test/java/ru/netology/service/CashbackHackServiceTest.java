@@ -7,7 +7,7 @@ import static org.testng.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    void calculateRemainIfLessThan1000() {
+    public void calculateRemainIfLessThan1000() {
         int amount = 900;
         CashbackHackService service = new CashbackHackService();
         int expected = 100;
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void calculateRemainIfMoreThan1000() {
+    public void calculateRemainIfMoreThan1000() {
         int amount = 1001;
         CashbackHackService service = new CashbackHackService();
         int expected = 999;
@@ -25,7 +25,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void calculateRemainIfEqual1000() {
+    public void calculateRemainIfEqual1000() {
         int amount = 1000;
         CashbackHackService service = new CashbackHackService();
         int expected = 0;
